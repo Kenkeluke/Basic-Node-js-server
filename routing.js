@@ -30,6 +30,10 @@ module.exports = {
         
         switch (path)
         {
+            case '/':
+                html.render('./index.html', res);
+                break;
+
             case '/home':
                 html.render('./index.html', res);
                 break;
